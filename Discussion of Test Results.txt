@@ -1,0 +1,93 @@
+Name: Yash Kapoor
+
+Discussion of Test Results
+
+- I tested my program thoroughly with different lists of letters. 
+  Also, I made sure my program was error-free by inputting several values and 
+  ensuring my program would not crash.
+
+  Below are two data sets that I tested:
+
+
+Test Data Set #1 (Mandatory Data Set):
+
+Input: X, A, z, M, W, y, D
+
+Output (User chooses debug mode): 
+
+
+Unsorted List:  x a z m w y d
+
+Do you want to run this program in debug mode? (Y/N): Y  
+
+
+
+Process P1: Performed Swapping
+Process P1: No Swapping
+
+Process P2: Performed Swapping
+Process P2: Performed Swapping
+
+Process P3: Performed Swapping
+Process P3: Performed Swapping
+
+List in lexicographic order: a d m w x y z 
+
+
+
+Output (User does not choose debug mode): 
+
+
+Unsorted List:  x a z m w y d
+
+Do you want to run this program in debug mode? (Y/N): N 
+
+List in lexicographic order: a d m w x y z 
+
+
+
+
+
+Test Data Set #2 (Additional Data Set):
+
+Input: Q, H, t, b, U, S, a
+
+Output (User chooses debug mode): 
+
+
+Unsorted List:  q h t b u s a
+Do you want to run this program in debug mode? (Y/N): Y
+
+
+Process P1: Performed Swapping
+Process P1: No Swapping
+
+Process P2: Performed Swapping
+Process P2: No Swapping
+
+Process P3: Performed Swapping
+Process P3: Performed Swapping
+
+List in lexicographic order: a b h q s t u 
+
+
+
+Output (User does not choose debug mode):
+
+
+Unsorted List:  q h t b u s a
+
+Do you want to run this program in debug mode? (Y/N): N 
+
+List in lexicographic order: a b h q s t u 
+
+
+
+Conclusion:
+
+After manually converting the two lists mentioned above into lexicographic order, I can conclude
+that my program sorts the array of distinct letters correctly. Specifically, it is evident that
+the first and second lists sorted in lexicographic order are indeed (a d m w x y z) 
+and (a b h q s t u), respectively. Hence, my program is functioning the way it is supposed to. 
+
+
