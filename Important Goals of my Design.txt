@@ -1,0 +1,33 @@
+Name: Yash Kapoor
+					Important Goals of my Design
+
+In this project, I programmed three concurrent processes that sort an array into lexicographic 
+order. I will describe the important goals of my design using point form:
+- I created 2 child processes from a single parent process, so I have a total of 3 processes 
+  (P1, P2, and P3). I used these 3 processes to sort the array into lexicographic order. 
+- I used an array of size 7 that was declared in shared memory to store the 7 distinct letters
+  entered by the user, so all three processes can modify the array until it is completely sorted.
+  Specifically, Linux Shared Memory was used, so all processes can get access to the same array.
+- If the user enters more than one letter by accident, only the first letter they entered will be
+  stored in the array. The next set of letters will be ignored. 
+- After the user enters 7 distinct letters, they are converted to lowercase first and 
+  then stored in the array. 
+- Each process deals with 3 letters that are in the array and puts them in the correct position
+  in the array. The processes execute in this order: P1, P2, P3. Specifically, process 1 sorts  
+  the first, second, and third letter. Then, process 2 sorts the third, fourth, and fifth letter. 
+  Finally, process 3 sorts the fifth, sixth, and seventh letter. 
+  When the third process finishes executing, the entire array is printed to the user in   
+  lexicographic order. 
+- To get each process to sort the designated letters in the array, I used the insertion sort 
+  algorithm, which works perfectly in this case, to put the letters in the correct position 
+  in the array. 
+- To ensure mutual exclusion, I used Linux Semaphores. I made Process 3 sleep for 2 seconds and 
+  Process 2 sleep for 1 second, so Process 1 can acquire the semaphore first and finish execution.
+  After Process 1 finishes sorting its part of the array that it was responsible for, it 
+  releases the semaphore. Then, Process 2 acquires the semaphore. After Process 2 finishes
+  sorting its part of the array that it was responsible for, it releases the semaphore. Finally, 
+  Process 3 acquires the semaphore and puts the final 3 letters of the array in the correct 
+  position. Subsequently, it releases the semaphore.
+  Hence, the array is fully sorted in lexicographic order after Process 3 finishes.
+  After all processes are finished executing, the Semaphores and Shared Memory are deleted and
+  the program exits successfully. 
