@@ -1,4 +1,4 @@
-# Lexicographic-Sort-Concurrency
+# Lexicographic Sort Concurrency
 
 ## Description
 This concurrent program consists of three processes that sort a list of seven distinct letters into lexicographic order. Specifically, this program asks the user to enter seven distinct letters first and then puts those letters in an array for sorting to be performed by three processes (P1, P2, P3). Each process is responsible for sorting three letters and putting them in the correct position in the array. By the end of the last process (P3), the entire array is sorted into lexicographic order and printed to the user. 
