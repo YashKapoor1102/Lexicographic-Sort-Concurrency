@@ -61,8 +61,9 @@ letter 7.
 
 
 Once you are done using this application, you can type the following command in the terminal to clean up your files:
-
+```
 $ make clean
+```
 
 
 ## Credits
