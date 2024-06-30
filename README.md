@@ -30,14 +30,14 @@ https://www.instructables.com/How-to-install-Linux-on-your-Windows/
 
 **Step 1:** Clone the repository to your local machine:
 ```
-git clone https://github.com/YashKapoor1102/Lexicographic-Sort-Concurrency.git
+$ git clone https://github.com/YashKapoor1102/Lexicographic-Sort-Concurrency.git
 ```
 
 **Step 2:** Ensure the "Terminal" is opened.
 
 **Step 3:** Go to the folder where you cloned the repository by typing the following command:
 ```
-cd Lexicographic-Sort-Concurrency
+$ cd Lexicographic-Sort-Concurrency
 ```
 
 **Step 4:** Once you are in the folder, type the following command to compile all the source files:
@@ -48,10 +48,10 @@ cd Lexicographic-Sort-Concurrency
 
 	$ ./CSORT
 
-	This will ask you to enter seven distinct letters one by one. For example, if you want to 
-	test the list -> (X, A, z, M, W, y, D), you will enter "X" as letter 1, "A" as letter 2, 
-	"z" as letter 3, "M" as letter 4, "W" as letter 5, "y" as letter 6, and finally, "D" as 
-	letter 7. 
+This will ask you to enter seven distinct letters one by one. For example, if you want to 
+test the list -> (X, A, z, M, W, y, D), you will enter "X" as letter 1, "A" as letter 2, 
+"z" as letter 3, "M" as letter 4, "W" as letter 5, "y" as letter 6, and finally, "D" as 
+letter 7. 
 
 **Step 6:** After you have entered seven distinct letters, type "Y" to go into debug mode to track how each process performs the swaps in the array. Otherwise, type "N" to proceed normally and 
 	only get the program to print out the sorted array of letters.
