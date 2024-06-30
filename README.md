@@ -5,12 +5,12 @@ This concurrent program consists of three processes that sort a list of seven di
 
 The user can choose to go to debug mode after they enter seven distinct letters. They must type "Y" to go to debug mode, where they can view additional information about each process. Specifically, each process will tell the user if it swapped any of the letters in the array or not. 
 
-This program is made up of three files:  
-	**semun.h**		A header file to initialize the semaphores\n
-  	**CSORT.h**		A header file that contains the shared memory between all 3 processes
-  	**CSORT.c**	 	Contains the code for the program
+This program is made up of three files:<br>
+	**semun.h**		A header file to initialize the semaphores<br>
+  	**CSORT.h**		A header file that contains the shared memory between all 3 processes<br>
+  	**CSORT.c**	 	Contains the code for the program<br><br>
 
-        **Makefile**	Allows the user to compile and run the program
+**Makefile**	Allows the user to compile and run the program
 
 
 ## Installation
